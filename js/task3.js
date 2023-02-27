@@ -1,13 +1,16 @@
 //variables
 const countryContainer = document.getElementById("card-country")
+let url = 'https://restcountries.com/v3.1/region/europe'
 //region Africa, Americas, Asia, Europe, Oceania
 
 const region = document.getElementById('region')
-region.addEventListener('select', function(){
-    console.log(region.value)
+region.addEventListener('change', function(){
+    url =  `https://restcountries.com/v3.1/region/${region.value}`
+    countryContainer.innerHTML = ''
+    getCountry(url);
 })
 
-const url = 'https://restcountries.com/v3.1/region/europe'
+
 
 const getCountry = async(url) => {
     const data = await fetch(url)
