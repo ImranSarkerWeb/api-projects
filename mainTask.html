@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font-awesome link  -->
+    <script src="https://kit.fontawesome.com/2801134864.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+
+    </header>
+    <main>
+        <section class="d-flex flex-column flex-md-row">
+            <div class="d-flex flex-md-column flex-wrap gap-3 bg-dark  p-4">
+                <img src="images/logo/logo.png" alt="">
+                <button type="button" class="btn btn-secondary">Add A user</button>
+                <button type="button" class="btn btn-secondary">Double Money</button>
+                <button type="button" class="btn btn-secondary">Sort By Rank</button>
+                <button type="button" class="btn btn-secondary">Calculate Entire Wealth</button>
+                <button id="all-billionare" type="button" class="btn btn-secondary">Show All Billionaires</button>
+                <button type="button" class="btn btn-secondary">Richest By Industry</button>
+                <button type="button" class="btn btn-secondary">Richest By States</button>
+            </div>
+
+
+
+
+
+            <div class="w-100 h-100">
+                <div class="d-flex justify-content-between w-100  my-4">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <img class="me-3" src="images/logo/logo1.svg" height="40" width="40" alt="">
+                </div>
+                <div class="bg-secondary p-1 p-md-5">
+                    <h5>Hello User!</h5>
+                    <table class="table w-100 text-center">
+                        <thead>
+                            <th>Person</th>
+                            <th>Citizenship</th>
+                            <th>Industry</th>
+                            <th>Rank</th>
+                            <th class="text-right">Wealth</th>
+                        </thead>
+                        <tbody>
+                            <tr class="border-0 border-bottom-0 ">
+                                <td>Jeff Bezos <i class="fas fa-eye"></i></td>
+                                <td>United Stated</td>
+                                <td>Technology</td>
+                                <td>3</td>
+                                <td>$124317.31</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <!-- <ul class="d-flex justify-content-between list-unstyled mt-4">
+                <li>Person</li>
+                <li>Citizenship</li>
+                <li>Industry</li>
+                <li>Rank</li>
+                <li>Wealth</li>
+            </ul>
+            <hr>
+            
+            <ul class="d-flex justify-content-between list-unstyled mt-4">
+                <li>Jeff Bezos <i class="fas fa-eye"></i></li>
+                <li>Citizenship</li>
+                <li>Industry</li>
+                <li>Rank</li>
+                <li>Wealth</li>
+            </ul>
+            
+            <hr>    
+            <ul class="d-flex justify-content-between list-unstyled mt-4">
+                <li>Total</li>
+               
+                <li>$<span>0000</span></li>
+            </ul> -->
+
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script>
+        const allBillioniaresBtn = document.getElementById('all-billionare')
+        allBillioniaresBtn.addEventListener('click', function () {
+            window.location.href = "billionaire.html"
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
